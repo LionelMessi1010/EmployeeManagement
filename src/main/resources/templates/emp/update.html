@@ -96,11 +96,11 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="asserts/js/jquery-3.2.1.slim.min.js"></script>
-<script type="text/javascript" src="asserts/js/popper.min.js"></script>
-<script type="text/javascript" src="asserts/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.2.1.slim.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
 <!--		日期组件-->
-<script type="text/javascript" src="/laydate/laydate.js"></script> <!-- 改成你的路径 -->
+<script type="text/javascript" th:src="@{/laydate/laydate.js}"></script> <!-- 改成你的路径 -->
 <script>
     //执行一个laydate实例
     laydate.render({
