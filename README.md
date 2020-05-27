@@ -144,7 +144,7 @@ COMMIT;
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost/employee?useSSL=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/employee?useSSL=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     username: employee
     password: employee123
   thymeleaf:
