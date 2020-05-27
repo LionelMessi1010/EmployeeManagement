@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/employee?useSSL=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: employee
+    password: 123456
+  thymeleaf:
+    cache: false
+  messages:
+    basename: i18n.login
+
+mybatis:
+  type-aliases-package: com.godfrey.pojo
+  mapper-locations: classpath:com.godfrey.mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
